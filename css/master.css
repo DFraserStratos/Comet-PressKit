@@ -136,11 +136,35 @@ h2 {
 }
 
 /* Awards */
-.awards {
-    background: #f6f8fa;
+#awards {
+    background: #f8f9fa;
+}
+
+.award-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.award-header img {
+    max-width: 200px;
+    height: auto;
+}
+
+.award-content {
+    background: white;
     padding: 20px;
     border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin-top: 20px;
+}
+
+.award-nomination {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 10px;
 }
 
 /* Links */
@@ -176,5 +200,10 @@ h2 {
 
     .factsheet {
         grid-template-columns: 1fr;
+    }
+
+    .award-header {
+        flex-direction: column;
+        text-align: center;
     }
 }
